@@ -7,14 +7,11 @@ module.exports = {
   },
   // mode: 'development',
   module:{
-  rules: [{
+    rules: [{
       test: /\.tsx?$/,
       use: 'ts-loader',
       exclude: /node_modules/
     }]
-  },
-  devServer: {
-    contentBase: path.join(__dirname, `dist`), // 告诉服务器从何处提供内容
   },
   resolve: {
     extensions: ['.ts', '.js']
